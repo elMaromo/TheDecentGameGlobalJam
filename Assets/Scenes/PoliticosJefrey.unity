@@ -3068,7 +3068,7 @@ PrefabInstance:
     - target: {fileID: 7083411175084469088, guid: 541e730961e483e4893533ab77912cac,
         type: 3}
       propertyPath: SceneName
-      value: JaviScene
+      value: test manu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
