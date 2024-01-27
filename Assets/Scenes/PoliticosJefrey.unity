@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 70297982}
   m_Layer: 0
   m_Name: Capsule (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +260,7 @@ Transform:
   m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 114.241, z: 90}
 --- !u!136 &70297982
 CapsuleCollider:
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 85769289}
   m_Layer: 0
   m_Name: Isla
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,12 +362,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85769287}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.1, y: -33.9, z: -127.5}
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &85769289
 SphereCollider:
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 212531196}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 280448278}
   m_Layer: 0
   m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -574,10 +574,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.3691176, y: 0.36911774, z: 0.6031188, w: 0.6031187}
   m_LocalPosition: {x: 12.6, y: -3.3, z: -68.7}
-  m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
+  m_LocalScale: {x: 5.4370995, y: 5.4371004, z: 5.437101}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 62.935, z: 90}
 --- !u!136 &280448278
 CapsuleCollider:
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 368841161}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 442898084}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -862,6 +862,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442898082}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &481210593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481210594}
+  m_Layer: 0
+  m_Name: IslaEpstein
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481210594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481210593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 85769288}
+  - {fileID: 1065952464}
+  - {fileID: 1056117029}
+  - {fileID: 1890137538}
+  - {fileID: 280448277}
+  - {fileID: 70297981}
+  - {fileID: 2087083615}
+  - {fileID: 742537608}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689004656
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +1033,7 @@ GameObject:
   - component: {fileID: 742537605}
   m_Layer: 6
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1079,12 +1118,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742537604}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2.23, z: -49.4}
   m_LocalScale: {x: 500, y: 500, z: 500}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023105399
 GameObject:
@@ -1100,7 +1139,7 @@ GameObject:
   - component: {fileID: 1023105401}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1205,7 +1244,7 @@ GameObject:
   - component: {fileID: 1056117030}
   m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1220,10 +1259,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.27615204, y: 0.27615225, z: 0.6509532, w: 0.6509531}
   m_LocalPosition: {x: -0.4, y: -3.3, z: -44.8}
-  m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
+  m_LocalScale: {x: 5.4371, y: 5.4371004, z: 5.4371004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 45.976, z: 90}
 --- !u!136 &1056117030
 CapsuleCollider:
@@ -1312,7 +1351,7 @@ GameObject:
   - component: {fileID: 1061894691}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,7 +1456,7 @@ GameObject:
   - component: {fileID: 1065952465}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,10 +1471,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5971928, y: 0.597193, z: 0.37862995, w: 0.37862998}
   m_LocalPosition: {x: 4.2, y: -3.27, z: -32.4}
-  m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
+  m_LocalScale: {x: 5.4370995, y: 5.4371004, z: 5.4371}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 115.249, z: 90}
 --- !u!136 &1065952465
 CapsuleCollider:
@@ -1524,7 +1563,7 @@ GameObject:
   - component: {fileID: 1074130708}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1629,7 +1668,7 @@ GameObject:
   - component: {fileID: 1125614801}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1734,7 +1773,7 @@ GameObject:
   - component: {fileID: 1626772245}
   m_Layer: 6
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1819,12 +1858,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626772244}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2120542601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1666102467
 PrefabInstance:
@@ -1837,7 +1876,7 @@ PrefabInstance:
     - target: {fileID: 3069709624040886299, guid: 4da076f9aba14ae43b3ca2d67a8a9dcd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.6
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 3069709624040886299, guid: 4da076f9aba14ae43b3ca2d67a8a9dcd,
         type: 3}
@@ -1847,7 +1886,7 @@ PrefabInstance:
     - target: {fileID: 3069709624040886299, guid: 4da076f9aba14ae43b3ca2d67a8a9dcd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.54
+      value: 12.62
       objectReference: {fileID: 0}
     - target: {fileID: 3069709624040886299, guid: 4da076f9aba14ae43b3ca2d67a8a9dcd,
         type: 3}
@@ -1908,7 +1947,7 @@ GameObject:
   - component: {fileID: 1686445847}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2013,7 +2052,7 @@ GameObject:
   - component: {fileID: 1786525691}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2118,7 +2157,7 @@ GameObject:
   - component: {fileID: 1875718021}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2225,7 +2264,7 @@ GameObject:
   - component: {fileID: 1890137539}
   m_Layer: 0
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2240,10 +2279,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.59082955, y: 0.59082973, z: 0.38848472, w: 0.38848472}
   m_LocalPosition: {x: 6.5, y: -3.3, z: -57.2}
-  m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
+  m_LocalScale: {x: 5.4370995, y: 5.4371, z: 5.4370995}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 113.348, z: 90}
 --- !u!136 &1890137539
 CapsuleCollider:
@@ -2332,7 +2371,7 @@ GameObject:
   - component: {fileID: 2087083616}
   m_Layer: 0
   m_Name: Capsule (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2347,10 +2386,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.43432137, y: 0.43432158, z: 0.55800086, w: 0.5580007}
   m_LocalPosition: {x: 1.3, y: -3.3, z: -93.4}
-  m_LocalScale: {x: 5.4371, y: 5.4371, z: 5.4371}
+  m_LocalScale: {x: 5.4371, y: 5.4371004, z: 5.4371004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2120542601}
+  m_Father: {fileID: 481210594}
   m_LocalEulerAnglesHint: {x: 0, y: 75.791, z: 90}
 --- !u!136 &2087083616
 CapsuleCollider:
@@ -2464,13 +2503,7 @@ Transform:
   - {fileID: 1125614800}
   - {fileID: 442898083}
   - {fileID: 1023105400}
-  - {fileID: 1065952464}
-  - {fileID: 1056117029}
-  - {fileID: 1890137538}
-  - {fileID: 280448277}
-  - {fileID: 70297981}
-  - {fileID: 2087083615}
-  - {fileID: 85769288}
+  - {fileID: 1626772248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -2478,8 +2511,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 689004658}
-  - {fileID: 1626772248}
-  - {fileID: 742537608}
   - {fileID: 1666102467}
   - {fileID: 6238235}
   - {fileID: 2120542601}
+  - {fileID: 481210594}
