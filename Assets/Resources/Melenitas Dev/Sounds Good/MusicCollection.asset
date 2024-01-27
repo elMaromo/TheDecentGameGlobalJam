@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8fb88ad88530994d99ab8985aa6bf88, type: 3}
+  m_Name: MusicCollection
+  m_EditorClassIdentifier: 
+  musicTracks:
+  - tag: FirePlaceAmbient
+    clips:
+    - {fileID: 8300000, guid: 13680669e657d8c419eb47138b52ce5c, type: 3}
+    compressionPreset: 0
+    forceToMono: 0
+  - tag: LobbyMusic
+    clips:
+    - {fileID: 8300000, guid: a7973aef42961e346afcfa85fc31c11a, type: 3}
+    compressionPreset: 0
+    forceToMono: 0
+  - tag: AmbientMusic
+    clips:
+    - {fileID: 8300000, guid: 8afc6f0565daf9e449298916df770602, type: 3}
+    compressionPreset: 0
+    forceToMono: 0
+  - tag: BossMusic
+    clips:
+    - {fileID: 8300000, guid: b7f3f441c75eea84da68238cd6b84ea4, type: 3}
+    compressionPreset: 0
+    forceToMono: 0
+  - tag: MainMenuMusic
+    clips:
+    - {fileID: 8300000, guid: b4adf1bb3cea17a4cad65651aa28d1c5, type: 3}
+    compressionPreset: 0
+    forceToMono: 0
