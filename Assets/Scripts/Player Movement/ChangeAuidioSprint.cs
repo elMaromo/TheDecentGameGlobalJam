@@ -17,13 +17,13 @@ namespace Scenes.Level4.Scripts.PlayerMovement
 
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (UnityEngine.Input.GetKeyDown(KeyCode.LeftShift))
             {
                 audi.clip = RuningSound;
                 audi.Play();
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            if (UnityEngine.Input.GetKeyUp(KeyCode.LeftShift))
             {
                 audi.clip = walkingSound;
                 audi.Play();

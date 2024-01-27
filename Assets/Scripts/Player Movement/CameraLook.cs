@@ -14,8 +14,8 @@ public class CameraLook : MonoBehaviour
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * Sensibilidad * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * Sensibilidad * Time.deltaTime;
+        float mouseX = UnityEngine.Input.GetAxis("Mouse X") * Sensibilidad * Time.deltaTime;
+        float mouseY = UnityEngine.Input.GetAxis("Mouse Y") * Sensibilidad * Time.deltaTime;
 
         xRotacion -= mouseY;
         xRotacion = Mathf.Clamp(xRotacion, -90, 90);

@@ -33,13 +33,13 @@ namespace Scenes.Level4.Scripts.PlayerMovement
         private void Move()
         {
             float aceleration = speed;
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (UnityEngine.Input.GetKey(KeyCode.LeftShift))
             {
                 aceleration = sprintSpeed;
             }
 
-            float v = -Input.GetAxisRaw("Vertical");
-            float h = Input.GetAxisRaw("Horizontal");
+            float v = -UnityEngine.Input.GetAxisRaw("Vertical");
+            float h = UnityEngine.Input.GetAxisRaw("Horizontal");
             Vector2 normalSpeed = new Vector2(h, v);
 
             //Vector3 despV = transform.forward * aceleration * v * Time.deltaTime;
@@ -61,7 +61,7 @@ namespace Scenes.Level4.Scripts.PlayerMovement
 
         private void Jump()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && CanJump())
+            if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && CanJump())
             {
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
             }
