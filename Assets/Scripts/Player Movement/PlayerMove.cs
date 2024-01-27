@@ -50,6 +50,13 @@ namespace Scenes.Level4.Scripts.PlayerMovement
                 rb.velocity = (transform.forward * aceleration * -normalSpeed.y) + (transform.up * rb.velocity.y);
                 rb.velocity += transform.right * aceleration * normalSpeed.x;
             }
+            else
+            {
+                if(CanJump())
+                {
+                    rb.velocity = new Vector3( 0, rb.velocity.y, 0);
+                }
+            }
         }
 
         private void Jump()
