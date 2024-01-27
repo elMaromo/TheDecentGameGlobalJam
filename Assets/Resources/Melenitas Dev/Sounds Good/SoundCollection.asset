@@ -18,3 +18,15 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8d6a428e005e5c0488a75cc40812ec29, type: 3}
     compressionPreset: 1
     forceToMono: 1
+  - tag: Quevedo
+    clips:
+    - {fileID: 8300000, guid: 8d4cf35f607c21e4da4ef6a216d3b44c, type: 3}
+    compressionPreset: 1
+    forceToMono: 0
+  - tag: QuevedoEffect
+    clips:
+    - {fileID: 8300000, guid: 822e166aa730bad41a8373835487ea1c, type: 3}
+    - {fileID: 8300000, guid: 5905a2663824dec48b7857c4cf2095f5, type: 3}
+    - {fileID: 8300000, guid: d01a8a29db5dfab4ea9f60d898d2a952, type: 3}
+    compressionPreset: 1
+    forceToMono: 0

@@ -2,6 +2,8 @@ namespace MelenitasDev.SoundsGood
 {
 	public enum SFX
 	{
-		Click
+		Click,
+		Quevedo,
+		QuevedoEffect
 	}
 }
