@@ -19,20 +19,19 @@ namespace Player
             _input = new UnityInput();
             _myTransform = transform;
         }
-
-        // private void Update()
-        // {
-        //     var moveDirection = _input.GetDirection();
-        //     var rotationDirection = _input.GetRotationDirection();
-        //     _movementController.Rotate(rotationDirection);
-        //     _movementController.Move(moveDirection);
-        // }
-        void Update()
+        
+        private void Update()
         {
             var direction = _input.GetDirection();
             var rotationDirection = _input.GetRotationDirection();
             _movementController.Move(direction);
             _movementController.Rotate(rotationDirection);
+
+            _movementController.ApplyGravity();
+            if (_input.IsJumping())
+            {
+                _movementController.Jump();
+            }
         }
     }
 }

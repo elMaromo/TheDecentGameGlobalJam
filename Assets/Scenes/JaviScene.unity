@@ -12465,6 +12465,7 @@ MonoBehaviour:
   _movementSpeed: 5.5
   _angularSpeed: 180
   _sensitivity: 4.5
+  _jumpForce: 4
 --- !u!143 &7849124259757979728
 CharacterController:
   m_ObjectHideFlags: 0

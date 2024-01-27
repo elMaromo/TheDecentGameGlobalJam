@@ -18,5 +18,10 @@ namespace Input
             var mouseY = UnityEngine.Input.GetAxis("Mouse Y");
             return new Vector3(mouseX, mouseY);
         }
+
+        public bool IsJumping()
+        {
+            return UnityEngine.Input.GetKeyDown(KeyCode.Space);
+        }
     }
 }

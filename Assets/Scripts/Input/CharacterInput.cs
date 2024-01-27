@@ -6,5 +6,6 @@ namespace Input
     {        
         Vector3 GetDirection();
         Vector2 GetRotationDirection();
+        bool IsJumping();
     }
 }
