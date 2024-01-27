@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/PoliticosJefrey.unity
+    guid: 1d4284dd5b65e984f98490ecd399aa55
+  - enabled: 1
+    path: Assets/Scenes/JaviScene.unity
+    guid: 58fc5bbe7da75de4c90e0eeeceefc1c0
+  - enabled: 1
+    path: Assets/Test Manu/test manu.unity
+    guid: b917a89d9aa1b8c438987a99a2ec9adf
   m_configObjects: {}
