@@ -45,8 +45,11 @@ namespace Scenes.Level4.Scripts.PlayerMovement
             //Vector3 despV = transform.forward * aceleration * v * Time.deltaTime;
             //Vector3 despH = transform.right * aceleration * h * Time.deltaTime;
 
-            rb.velocity = (transform.forward * aceleration * -normalSpeed.y) + (transform.up * rb.velocity.y);
-            rb.velocity += transform.right * aceleration * normalSpeed.x;
+            if (normalSpeed.magnitude != 0)
+            {
+                rb.velocity = (transform.forward * aceleration * -normalSpeed.y) + (transform.up * rb.velocity.y);
+                rb.velocity += transform.right * aceleration * normalSpeed.x;
+            }
         }
 
         private void Jump()
