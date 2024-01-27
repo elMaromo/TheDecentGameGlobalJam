@@ -40,12 +40,16 @@ namespace Scenes.Level4.Scripts.PlayerMovement
 
             float v = -Input.GetAxisRaw("Vertical");
             float h = Input.GetAxisRaw("Horizontal");
+            Vector2 normalSpeed = new Vector2(h, v);
 
             //Vector3 despV = transform.forward * aceleration * v * Time.deltaTime;
             //Vector3 despH = transform.right * aceleration * h * Time.deltaTime;
 
-            rb.velocity = (transform.forward * aceleration * -v) + (transform.up * rb.velocity.y);
-            rb.velocity += transform.right * aceleration * h;
+            if (normalSpeed.magnitude != 0)
+            {
+                rb.velocity = (transform.forward * aceleration * -normalSpeed.y) + (transform.up * rb.velocity.y);
+                rb.velocity += transform.right * aceleration * normalSpeed.x;
+            }
         }
 
         private void Jump()
