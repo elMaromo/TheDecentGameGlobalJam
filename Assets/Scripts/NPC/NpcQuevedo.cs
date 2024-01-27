@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 namespace NPC
 {
@@ -36,7 +37,7 @@ namespace NPC
         {
             if (_agent.remainingDistance > _agent.stoppingDistance) return;
 
-            _pathPointIndex = (_pathPointIndex + 1) % _pathPoints.Length;
+            _pathPointIndex = Random.Range(0, _pathPoints.Length);
             _agent.SetDestination(_pathPoints[_pathPointIndex].position);
         }
 
