@@ -5,30 +5,30 @@ namespace NPC
 {
     public class Npc : MonoBehaviour
     {
-        private Transform _myTransform;
-        private Transform _player;
+        protected Transform myTransform;
+        protected Transform player;
 
         private void Awake()
         {
-            _myTransform = transform;
+            myTransform = transform;
         }
-
+        
         public void Configure(Transform player)
         {
-            _player = player;
+            this.player = player;
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             LookAtPlayer();
         }
 
         private void LookAtPlayer()
         {
-            var directionToPlayer = _player.position - _myTransform.position;
+            var directionToPlayer = player.position - myTransform.position;
             directionToPlayer.y = 0;
             var rotation = Quaternion.LookRotation(directionToPlayer);
-            _myTransform.rotation = rotation * Quaternion.Euler(90, 0, 0);
+            myTransform.rotation = rotation * Quaternion.Euler(90, 0, 0);
         }
     }
 }
