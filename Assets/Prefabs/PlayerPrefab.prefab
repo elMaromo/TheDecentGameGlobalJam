@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1c625be2cb94a4ea152ef171de6cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sensibilidad: 150
+  Sensibilidad: 300
   playerBody: {fileID: 1833746465523127956}
   xRotacion: 0
 --- !u!1 &6046603835052392754
@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 6046603835052392754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 3069709624040886299}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8665624642919106150}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -359,10 +359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1494da37dc984a54998f00adb1f0f857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  sprintSpeed: 5
+  speed: 10
+  sprintSpeed: 20
   distToGroundToJump: 2
-  jumpForce: 8
+  jumpForce: 15
   customGravity: 5000
   groundLayer:
     serializedVersion: 2
