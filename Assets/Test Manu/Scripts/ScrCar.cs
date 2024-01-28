@@ -6,26 +6,32 @@ using MelenitasDev.SoundsGood;
 
 public class ScrCar : MonoBehaviour
 {
-    public ParticleSystem particleSystem;  // Asigna el sistema de partículas desde el Inspector
-
-    void Start()
-    {
-        Sound sound = new Sound(SFX.coche);
-        sound.SetFadeOut(3);
-        sound.Play();
-    }
+    public ParticleSystem particleSystem;  
 
      void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered Trigger");
-
+        if(other.CompareTag("kxao"))
+        {
+            Sound kxao = new Sound(SFX.kxao);
+            kxao.Play();
+        }
+        if (other.CompareTag("Tubo2"))
+        {
+            Sound gota = new Sound(SFX.gota);
+            gota.SetVolume(250f);
+            gota.Play();
+            Sound sound = new Sound(SFX.coche);
+            sound.Play();
+            sound.Stop(3.3f);
+        }
         if (other.CompareTag("Tubo"))
         {
-            Debug.Log("Collided with Tubo");
             particleSystem.Play();
-            Sound sound = new Sound(SFX.coche);
-            sound.SetFadeOut(3);
-            sound.Play();
+            Sound explosion = new Sound(SFX.explosion);
+            explosion.SetVolume(0.5f);
+            explosion.SetFadeOut(0.1f);
+            explosion.Play();
+            
         }
     }
 }
