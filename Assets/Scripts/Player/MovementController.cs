@@ -31,7 +31,7 @@ namespace Player
         {
             _character = character;
         }
-        
+
         public void Rotate(Vector2 direction)
         {
             if (direction.Equals(Vector3.zero)) return;
@@ -42,11 +42,10 @@ namespace Player
 
         private void RotateCamera(Vector2 direction)
         {
-            direction *= _sensitivity * Time.deltaTime;
-            _rotationX -= direction.y;
-            _rotationX = Mathf.Clamp(_rotationX, -90, 90);
-            _mainCamera.localRotation = quaternion.Euler(_rotationX, 0, 0);
-            
+            _rotationX -= direction.y * _sensitivity;
+            _rotationX = Mathf.Clamp(_rotationX, -90f, 90f);
+            _mainCamera.localRotation = Quaternion.Euler(_rotationX, 0f, 0f);
+
             var newYAngle = _character.MyTransform.eulerAngles.y;
             var currentEulerAngles = _mainCamera.localEulerAngles;
             currentEulerAngles.y = newYAngle;
@@ -65,9 +64,9 @@ namespace Player
             var movementDirection = _character.MyTransform.right * direction.x +
                                     _character.MyTransform.forward * direction.z;
 
-            
+
             var destination = movementDirection * (_movementSpeed * Time.deltaTime);
-            
+
             _characterController.Move(destination);
         }
 
@@ -88,7 +87,7 @@ namespace Player
         public void Jump()
         {
             if (!_characterController.isGrounded) return;
-            
+
             _jumpVelocity.y = Mathf.Sqrt(2f * _jumpForce * _gravity);
         }
     }

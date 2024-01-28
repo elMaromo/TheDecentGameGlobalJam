@@ -4,6 +4,7 @@ namespace MelenitasDev.SoundsGood
 	{
 		Click,
 		Quevedo,
-		QuevedoEffect
+		QuevedoEffect,
+		coche
 	}
 }
