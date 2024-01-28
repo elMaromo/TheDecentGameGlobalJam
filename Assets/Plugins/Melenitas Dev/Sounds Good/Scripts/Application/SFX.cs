@@ -6,12 +6,9 @@ namespace MelenitasDev.SoundsGood
 		Quevedo,
 		QuevedoEffect,
 		coche,
-
 		TheRock,
-
-		explosion,
-		gota,
 		kxao,
-
+		gota,
+		explosion
 	}
 }

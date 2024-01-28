@@ -35,14 +35,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b43a70e1f542c324db7f72699527447c, type: 3}
     compressionPreset: 1
     forceToMono: 0
-<<<<<<< Updated upstream
   - tag: TheRock
     clips:
     - {fileID: 8300000, guid: c660c3580caa07f41b22e21061ed09c9, type: 3}
-=======
-  - tag: explosion
+    compressionPreset: 1
+    forceToMono: 0
+  - tag: kxao
     clips:
-    - {fileID: 8300000, guid: b4684fe51def44f45ab2f6dcd2ead54e, type: 3}
+    - {fileID: 8300000, guid: c2864b84ba87aad46a6ea58cbaebbdef, type: 3}
     compressionPreset: 1
     forceToMono: 0
   - tag: gota
@@ -50,9 +50,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6de75e6db7cbd634e8d97018de523d25, type: 3}
     compressionPreset: 1
     forceToMono: 0
-  - tag: kxao
+  - tag: explosion
     clips:
-    - {fileID: 8300000, guid: c2864b84ba87aad46a6ea58cbaebbdef, type: 3}
->>>>>>> Stashed changes
+    - {fileID: 8300000, guid: b4684fe51def44f45ab2f6dcd2ead54e, type: 3}
     compressionPreset: 1
     forceToMono: 0

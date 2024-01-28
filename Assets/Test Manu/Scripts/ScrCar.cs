@@ -32,6 +32,6 @@ public class ScrCar : MonoBehaviour
             explosion.SetFadeOut(0.1f);
             explosion.Play();
             
-        }
+        } 
     }
 }
