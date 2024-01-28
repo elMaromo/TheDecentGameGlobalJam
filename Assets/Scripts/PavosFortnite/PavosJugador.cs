@@ -9,9 +9,7 @@ public class PavosJugador : MonoBehaviour
     // If there is an instance, and it's not me, delete myself.
 
     public static PavosJugador Instance { get; private set; }
-
     public int numPavos;
-    public TextMeshProUGUI pavosText;
 
     private void Awake()
     {
@@ -24,31 +22,17 @@ public class PavosJugador : MonoBehaviour
             Instance = this;
         }
     }
-    private void Start()
-    {
-        if (pavosText == null)
-        {
-            Debug.LogError("Asigna el objeto Text para mostrar la cantidad de pavos en el Inspector.");
-        }
-        else
-        {
-            ActualizarInterfaz();
-        }
-    }
+
 
     public void  OnTriggerEnter(Collider other)
     {
         if( other.gameObject.CompareTag("Pavo"))
         {
             numPavos++;
-            other.gameObject.GetComponent<ScrCoin>().collected = true;
             Destroy(other.gameObject);
             other.gameObject.SetActive(false);
         }
 
     }
-    private void ActualizarInterfaz()
-    {
-        pavosText.text = "Pavos: " + numPavos.ToString();
-    }
+
 }
