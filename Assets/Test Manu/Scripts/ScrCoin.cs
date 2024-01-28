@@ -15,15 +15,15 @@ public class ScrCoin : MonoBehaviour
     }
 
 
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-        }
-    }
+    // private void Awake()
+    // {
+    //     if (Instance != null && Instance != this)
+    //     {
+    //         Destroy(this);
+    //     }
+    //     else
+    //     {
+    //         Instance = this;
+    //     }
+    // }
 }
