@@ -35,3 +35,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b43a70e1f542c324db7f72699527447c, type: 3}
     compressionPreset: 1
     forceToMono: 0
+  - tag: TheRock
+    clips:
+    - {fileID: 8300000, guid: c660c3580caa07f41b22e21061ed09c9, type: 3}
+    compressionPreset: 1
+    forceToMono: 0

@@ -5,6 +5,7 @@ namespace MelenitasDev.SoundsGood
 		Click,
 		Quevedo,
 		QuevedoEffect,
-		coche
+		coche,
+		TheRock
 	}
 }
