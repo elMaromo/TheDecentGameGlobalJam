@@ -41,8 +41,9 @@ public class PavosJugador : MonoBehaviour
         if( other.gameObject.CompareTag("Pavo"))
         {
             numPavos++;
+            other.gameObject.GetComponent<ScrCoin>().collected = true;
             Destroy(other.gameObject);
-            ActualizarInterfaz();
+            other.gameObject.SetActive(false);
         }
 
     }
