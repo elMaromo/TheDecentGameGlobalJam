@@ -30,3 +30,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d01a8a29db5dfab4ea9f60d898d2a952, type: 3}
     compressionPreset: 1
     forceToMono: 0
+  - tag: coche
+    clips:
+    - {fileID: 8300000, guid: b43a70e1f542c324db7f72699527447c, type: 3}
+    compressionPreset: 1
+    forceToMono: 0

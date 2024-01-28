@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Pavo
+  - Tubo
   layers:
   - Default
   - TransparentFX
