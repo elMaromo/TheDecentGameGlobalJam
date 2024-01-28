@@ -6,12 +6,12 @@ namespace MelenitasDev.SoundsGood
 		Quevedo,
 		QuevedoEffect,
 		coche,
-<<<<<<< Updated upstream
-		TheRock
-=======
+
+		TheRock,
+
 		explosion,
 		gota,
-		kxao
->>>>>>> Stashed changes
+		kxao,
+
 	}
 }
