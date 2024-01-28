@@ -3625,6 +3625,7 @@ GameObject:
   - component: {fileID: 1720207762}
   - component: {fileID: 1720207761}
   - component: {fileID: 1720207764}
+  - component: {fileID: 1720207765}
   m_Layer: 0
   m_Name: "ni\xF1os"
   m_TagString: Untagged
@@ -3643,7 +3644,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d3de595d9840bfd41805bcf29b22b445, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -3814,8 +3815,20 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 20
+  m_Radius: 30
   m_Center: {x: -0.0000038146973, y: 0, z: 0}
+--- !u!114 &1720207765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720207760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6f2f662c28bb843a151587eee9a81a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1786525689
 GameObject:
   m_ObjectHideFlags: 0
