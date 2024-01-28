@@ -24,11 +24,6 @@ public class ScrCoin : MonoBehaviour
         else
         {
             Instance = this;
-
-            if( collected == true )
-            {
-                gameObject.SetActive(false);
-            }
         }
     }
 }
