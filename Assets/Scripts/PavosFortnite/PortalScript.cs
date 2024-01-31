@@ -6,12 +6,18 @@ using UnityEngine.SceneManagement;
 public class PortalScript : MonoBehaviour
 {
     public string SceneName;
+    public int numPavosToPass;
     
     public void OnTriggerEnter( Collider other )
     {
+
         if( other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
+            if( PavosJugador.Instance.numPavos >= numPavosToPass )
+            {
+                SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
+            }
+            
         }
     }
 }

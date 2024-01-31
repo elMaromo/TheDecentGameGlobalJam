@@ -20,19 +20,7 @@ public class PavosJugador : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
     }
-
-
-    public void  OnTriggerEnter(Collider other)
-    {
-        if( other.gameObject.CompareTag("Pavo"))
-        {
-            numPavos++;
-            Destroy(other.gameObject);
-            other.gameObject.SetActive(false);
-        }
-
-    }
-
 }
